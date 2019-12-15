@@ -59,6 +59,7 @@ anychart.onDocumentReady(function () {
     ).draw();
 
     var title = chart.title();
-    title.text("Sales Performance");
+    title.text("Optimal Surfing Locations");
+    chart.getSeries(0).name("Wind speed in Knots: ");
 });
 
