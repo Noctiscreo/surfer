@@ -20,7 +20,13 @@ button {
     text-align: center;
     padding: 5px;
     border-radius: 5px;
-    font-size: 2.5rem;
+    font-size: 2rem;
+}
+
+.choice {
+    text-align: center;
+    font-size: 2rem;
+    color: #00b33c;
 }
 
 html, body, #container {
@@ -32,7 +38,7 @@ html, body, #container {
 
 a {
     text-decoration: none;
-    color: #000000;
+    color: #a2a2c3;
     font-size: 2rem;
     font-family: Times;
 }
@@ -52,6 +58,7 @@ nav {
 nav .link {
     text-align: center;
     overflow: auto;
+
 }
 
 /* Spaces out links evenly */
@@ -74,5 +81,4 @@ footer {
 
 #container .graph {
     height: 50%;
-
 }
