@@ -11,7 +11,7 @@ anychart.onDocumentReady(function () {
                     from: 0,
                     to: 30,
                     fill: {
-                        keys: [ ".1 red", ".5 green", ".9 yellow"],
+                        keys: [ ".1 yellow", ".4 green", "1 yellow"],
                         angle: -90,
                         opacity: 0.5
                     }}],
@@ -20,16 +20,16 @@ anychart.onDocumentReady(function () {
                 "textAxesMarkers": [{
                     "scale": 1,
                     "offsetX": 10,
-                    "value": 25,
+                    "value": 26,
                     "fontSize": 15,
-                    "text": "Dangerous",
+                    "text": "Poor",
                     "fontWeight": 600},
 
 // set text marker at the center
                     {
                         "scale": 1,
                         "offsetX": 10,
-                        "value": 15,
+                        "value": 18,
                         "text": "Optimal",
                         "fontSize": 18,
                         "fontWeight": 600},
@@ -61,7 +61,7 @@ anychart.onDocumentReady(function () {
     ).draw();
 
     var title = chart.title();
-    title.text("Surf Spots");
+    title.text("Better winds for Intermediate: 0-20 knots, then decreases up to 25 knots.");
     chart.getSeries(0).name("Wind speed in Knots: ");
 });
 

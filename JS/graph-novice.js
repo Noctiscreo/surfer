@@ -71,7 +71,7 @@ anychart.onDocumentReady(function () {
     ).draw();
 
     var title = chart.title();
-    title.text("Optimal winds for Novice: 0-15 knots, then decreases up to 20 knots.");
+    title.text("Better winds for Novice: 0-15 knots, then decreases up to 20 knots.");
     chart.getSeries(0).name("Wind speed in Knots: ");
 });
 

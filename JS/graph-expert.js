@@ -11,7 +11,7 @@ anychart.onDocumentReady(function () {
                     from: 0,
                     to: 30,
                     fill: {
-                        keys: [ ".1 red", ".5 green", ".9 yellow"],
+                        keys: [ ".5 green", ".9 yellow"],
                         angle: -90,
                         opacity: 0.5
                     }}],
@@ -22,17 +22,8 @@ anychart.onDocumentReady(function () {
                     "offsetX": 10,
                     "value": 25,
                     "fontSize": 15,
-                    "text": "Dangerous",
+                    "text": "Optimal",
                     "fontWeight": 600},
-
-// set text marker at the center
-                    {
-                        "scale": 1,
-                        "offsetX": 10,
-                        "value": 15,
-                        "text": "Optimal",
-                        "fontSize": 18,
-                        "fontWeight": 600},
 
 // set text marker at the bottom
                     {
@@ -61,7 +52,7 @@ anychart.onDocumentReady(function () {
     ).draw();
 
     var title = chart.title();
-    title.text("Surf Spots");
+    title.text("Better winds for Expert: Quality increases with wind speed.");
     chart.getSeries(0).name("Wind speed in Knots: ");
 });
 
