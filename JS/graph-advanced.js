@@ -1,5 +1,7 @@
+
+
 anychart.onDocumentReady(function () {
-    // this column represents JS equivalents every JSON object
+
     var chart = anychart.fromJson(
         {chart: { type: "line",
 
@@ -7,9 +9,9 @@ anychart.onDocumentReady(function () {
                 rangeAxesMarkers: [{
                     scale: 1,
                     from: 0,
-                    to: 30000,
+                    to: 30,
                     fill: {
-                        keys: [ ".1 green", ".5 yellow", ".9 red"],
+                        keys: [ ".1 red", ".5 green", ".9 yellow"],
                         angle: -90,
                         opacity: 0.5
                     }}],
@@ -18,48 +20,48 @@ anychart.onDocumentReady(function () {
                 "textAxesMarkers": [{
                     "scale": 1,
                     "offsetX": 10,
-                    "value": 25000,
+                    "value": 25,
                     "fontSize": 15,
-                    "text": "Good",
+                    "text": "Dangerous",
                     "fontWeight": 600},
 
 // set text marker at the center
                     {
                         "scale": 1,
                         "offsetX": 10,
-                        "value": 15000,
-                        "text": "Average",
-                        "fontSize": 15,
+                        "value": 15,
+                        "text": "Optimal",
+                        "fontSize": 18,
                         "fontWeight": 600},
 
 // set text marker at the bottom
                     {
                         "scale": 1,
                         "offsetX": 10,
-                        "value": 5000,
-                        "text": "Severe",
-                        "fontSize": 12,
+                        "value": 5,
+                        "text": "Poor",
+                        "fontSize": 15,
                         "fontWeight": 600}],
 
 
 
                 // data set
                 series: [{seriesType: "line",
-                    data: [ {x: "2005", value: "10000"},
-                        {x: "2006", value: "12000"},
-                        {x: "2007", value: "18000"},
-                        {x: "2008", value: "19000"},
-                        {x: "2009", value: "29000"}
+                    data: [ {x: "Falmouth", value: "10"},
+                        {x: "Croyd", value: "12"},
+                        {x: "Thurso East", value: "18"},
+                        {x: "Fistral Beach", value: "19"},
+                        {x: "Port Rush", value: "29"}
                     ]}],
                 title: {enabled: "false",},
-                yScale: {minimum: "0", maximum: "30000"},
+                yScale: {minimum: "0", maximum: "30"},
                 xAxes: {title: {enabled: "false"}},
                 yAxes: {title: "Sales"},
                 container: "container"}}
     ).draw();
 
     var title = chart.title();
-    title.text("Optimal Surfing Locations");
+    title.text("Surf Spots");
     chart.getSeries(0).name("Wind speed in Knots: ");
 });
 
